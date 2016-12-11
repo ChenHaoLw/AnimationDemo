@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <demos.ch.com.animationdemo.CirclePic
+      android:id="@+id/iv"
+      android:layout_width="@dimen/circle_radiu_big"
+      android:layout_height="@dimen/circle_radiu_big"
+      app:radiu="@dimen/circle_radiu_big"
+      android:layout_centerInParent="true"
+      android:src="@mipmap/d"
+      android:visibility="invisible"
+      />
+
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/iv"
+      android:layout_centerHorizontal="true"
+      android:src="@mipmap/ic_launcher"
+      />
+  <demos.ch.com.animationdemo.CirclePic
+      android:layout_width="@dimen/circle_radiu"
+      android:layout_height="@dimen/circle_radiu"
+      app:radiu="@dimen/circle_radiu"
+      android:src="@mipmap/f"
+      android:id="@+id/circlePic"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      />
+  <demos.ch.com.animationdemo.CirclePic
+      android:layout_width="@dimen/circle_radiu"
+      android:layout_height="@dimen/circle_radiu"
+      app:radiu="@dimen/circle_radiu"
+      android:src="@mipmap/e"
+      android:id="@+id/circlePicRight"
+      android:layout_alignParentRight="true"
+      />
+  <demos.ch.com.animationdemo.CirclePic
+      android:layout_width="@dimen/circle_radiu"
+      android:layout_height="@dimen/circle_radiu"
+      app:radiu="@dimen/circle_radiu"
+      android:src="@mipmap/g"
+      android:id="@+id/circlePicLeft"
+      android:layout_alignParentLeft="true"
+      />
+
+</RelativeLayout>

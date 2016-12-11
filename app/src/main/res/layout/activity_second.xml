@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <TextView
+      android:id="@+id/tv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="invisible"
+      android:background="@color/colorAccent"
+      />
+  <demos.ch.com.animationdemo.CircleBackGround
+      android:id="@+id/cbg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:radiuCbg="@dimen/circle_radiu_big"
+      app:pColor="#FFE7CE0F"
+      android:visibility="invisible"
+      />
+  <Button
+      android:id="@+id/btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:background="#c8ccef"
+      android:textColor="#FFB5AB15"
+      android:textSize="24dp"
+      android:text="onBackPressed"
+      android:visibility="invisible"
+      />
+</RelativeLayout>
